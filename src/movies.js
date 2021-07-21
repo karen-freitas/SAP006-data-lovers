@@ -180,7 +180,7 @@ arrayDirectors.forEach(director => {
   directorFilter.innerHTML += `<option value=${director} class="director">${director}</option>`
 })
 
-const producersList = films.map(film => film.director)
+const producersList = films.map(film => film.producer)
 const setproducers = [...new Set(producersList)]
 const arrayProducers = Array.from(setproducers)
 const producerFilter = document.getElementById("producer-list")
